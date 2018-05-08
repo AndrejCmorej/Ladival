@@ -408,6 +408,7 @@
 	    }
 		img {
 			transition: all 0.4s linear;
+			width: 100%;
 			&:hover {
 				transform: scale(1.2);
 			}
