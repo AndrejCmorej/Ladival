@@ -1,0 +1,97 @@
+html.menu-opened {
+	overflow: hidden;
+}
+body {
+
+	background: #ffc928;
+	background-image: url('../images/background.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: top center;
+	height: 100%;
+	overflow-x: hidden;
+
+	&.menu-opened {
+		overflow: hidden;
+	}
+	&.opened {
+		overflow: hidden;
+	}
+
+	a {
+	    color: $blue;
+	    transition: all 0.2s linear;
+
+	    &:focus, &:hover, &:active {
+	        outline: 0;
+	        color: inherit;
+	    }
+
+	}
+
+	li { list-style: none; }
+
+	::selection {
+	    color: #fff;
+	    background: #000;
+	    text-shadow: none;
+	}
+	::-webkit-selection {
+	    color: #fff;
+	    background: #000;
+	    text-shadow: none;
+	}
+	::-moz-selection {
+	    color: #fff;
+	    background: #000;
+	    text-shadow: none;
+	}
+
+	:active, :focus { outline: none; }
+
+
+	main {
+		float: left;
+		width: 100%;
+		position: relative;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	svg {
+		width: 100%;
+		height: auto;
+	}
+
+	article, aside, footer, header, nav, section {
+	    display: block;
+	    float: left;
+	    width: 100%;
+	}
+
+	.container {
+		@media (min-width: 1270px) {
+		    max-width: 1240px;
+		    width: 1240px;
+		}
+	}
+
+	.slick-loading .slick-list {
+	    background: transparent;
+	}
+
+	.morph-wrap {
+		position: fixed;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    width: 100%;
+	    overflow: hidden;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    z-index: -2;
+	}
+}

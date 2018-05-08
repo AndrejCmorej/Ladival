@@ -1,0 +1,104 @@
+/*
+
+List of mixins
+    @include clearfix;
+    @include placeholder($color-base);
+
+*/
+
+@mixin clearfix() {
+    &:before, &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+
+/* eg: @include user-select(none); */
+@mixin user-select($user-select) {
+    -webkit-user-select: ($user-select);
+    -moz-user-select: ($user-select);
+    -ms-user-select: ($user-select);
+    user-select: ($user-select);
+}
+
+
+@mixin placeholder($color: $input-color-placeholder) {
+    &:-moz-placeholder            { color: $color;}
+    &::-moz-placeholder           { color: $color;}
+    &:-ms-input-placeholder       { color: $color;} // Internet Egplorer 10+
+    &::-webkit-input-placeholder  { color: $color;} // Safari and Chrome
+}
+
+////
+/// Helper function to easily use an SVG inline in CSS
+/// without encoding it to base64, saving bytes.
+/// It also helps with browser support.
+////
+
+/// A small function allowing skipping base64 encoding
+/// and simply pasting the SVG markup right in the CSS.
+/// @author Jakob Eriksen
+/// @link http://codepen.io/jakob-e/pen/doMoML
+/// @param {String} $svg - SVG image to encode
+/// @return {String} - Encoded SVG data uri
+@function svg-uri($svg) {
+    $encoded: '';
+    $slice: 2000;
+    $index: 0;
+    $loops: ceil(str-length($svg) / $slice);
+
+    @for $i from 1 through $loops {
+        $chunk: str-slice($svg, $index, $index + $slice - 1);
+        $chunk: str-replace($chunk, '"', "'");
+        $chunk: str-replace($chunk, '<', '%3C');
+        $chunk: str-replace($chunk, '>', '%3E');
+        $chunk: str-replace($chunk, '&', '%26');
+        $chunk: str-replace($chunk, '#', '%23');
+        $encoded: #{$encoded}#{$chunk};
+        $index: $index + $slice;
+    }
+
+    @return url("data:image/svg+xml;charset=utf8,#{$encoded}");
+}
+
+/// Replace `$search` with `$replace` in `$string`
+/// @author Hugo Giraudel
+/// @link http://sassmeister.com/gist/1b4f2da5527830088e4d
+/// @param {String} $string - Initial string
+/// @param {String} $search - Substring to replace
+/// @param {String} $replace ('') - New value
+/// @return {String} - Updated string
+@function str-replace($string, $search, $replace: '') {
+    $index: str-index($string, $search);
+
+    @if $index {
+        @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
+
+    @return $string;
+}
+ 
+
+@function _buildIcon($icon) {
+    $icon: svg-uri('#{$icon}');
+    @return $icon;
+}
+
+@function icon(
+    $icon-name, 
+    $color, 
+    $stroke-color: transparent,
+    $stroke-width: 0,
+    $css: '' // arbitrary css
+    ){
+    $icons: (
+    icon-thick: "<svg fill='#{$color}' stroke='#{$stroke-color}' stroke-width='#{$stroke-width}' style='#{$css}' viewBox='0 0 200 200' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><polygon points='74.8,200.6 0,93.7 24.4,76.6 74.5,148.2 175.4,-0.6 200,16.1'/></g></svg>",
+    );
+
+    $icon: _buildIcon(map-get($icons, $icon-name));
+    @return #{$icon}
+ }

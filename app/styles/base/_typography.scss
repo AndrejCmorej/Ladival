@@ -1,0 +1,54 @@
+html {
+   font-size: 100%;
+}
+
+body {
+  font-family: $font-1;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: normal;
+
+  b, strong { font-weight: bold; }
+  em { font-style: italic; }
+
+
+  p {
+    font-family: $font-1;
+    font-size: 17px;
+    font-weight: 400;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-1;
+  font-weight: 700;
+  color: $blue;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+
+.btn {
+  color: #ffffff;
+  font-family: $font-1;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  letter-spacing: 0.42px;
+  background-color: $blue;
+}
+
+.btn-primary {
+  background-color: $blue;
+}

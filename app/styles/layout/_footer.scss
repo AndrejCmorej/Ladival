@@ -1,0 +1,160 @@
+.footer {
+	display: block;
+	width: 100%;
+
+	&__top {
+		background-color: #1a65a6;
+		width: 100%;
+		padding: 35px 0px;
+		& > div.container {
+			width: 100%;
+			max-width: 1095px;
+		}
+			p {
+				color: #fff;
+				display: inline-block;
+				margin-bottom: 0px;
+				font-family: $font-1;
+				font-size: 15px;
+				font-weight: 300;
+				line-height: 20px;
+				span {
+					font-weight: 700;
+				}
+
+				a {
+					font-family: $font-1;
+					color: #fff;
+					font-size: 15px;
+					line-height: 20px;
+					text-decoration: none;
+					display: inline-block;
+					margin-top: 20px;
+					span {
+						font-weight: 600;
+					}
+
+
+				}
+			}
+
+			img {
+				float: right;
+    			margin-top: 6px;
+			}
+			}
+			&__bottom {
+				background-color: orange;
+				width: 100%;
+				padding: 30px 0px;
+				& > div.container {
+					width: 100%;
+					max-width: 1095px;
+				}
+
+				p {
+				    font-size: 15px;
+				    display: inline-block;
+				    margin-bottom: 0px;
+					color: #1a65a6;
+					font-family: $font-1;
+					font-weight: 400;
+					line-height: 20px;
+				}
+
+				a {
+					float: right;
+					color: #1a65a6;
+				    font-family: $font-1;
+				    font-size: 15px;
+				    font-weight: 400;
+				    line-height: 20px;
+				    text-decoration: none;
+
+				    &:hover, &:focus, &:active {
+				    	color: #1a65a6;
+				    }
+
+				    img {
+				    	margin-top: -2px;
+				    }
+				}
+
+			}
+}
+
+@media screen and (max-width: $screen-lg-max) {
+	.footer__top {
+		padding: 30px 100px;
+	}
+
+	.footer__bottom {
+		padding: 30px 100px;
+	}
+}
+
+@media screen and (max-width: $screen-md-max) {
+	.footer__top {
+		padding: 30px 50px;
+	}
+
+	.footer__bottom {
+		padding: 30px 50px;
+	}
+}
+
+@media screen and (max-width: $screen-sm-max) {
+	.footer__top {
+		padding: 30px 20px;
+	}
+
+	.footer__bottom {
+		padding: 30px 20px;
+		p {
+			display: block;
+			text-align: center;
+			margin-bottom: 10px;
+		}
+
+		a {
+			display: block;
+			text-align: center;
+			float: left;
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: $screen-xs-max) {
+	.footer__top {
+		p {
+			text-align: center;
+		    display: inline-block;
+		    width: 100%;
+		    font-size: 12px;
+		    a {
+		    	font-size: 12px;
+		    }
+		}
+
+		img {
+			float: none;
+			display: block;
+			margin: 0 auto;
+			margin-top: 24px;
+		}
+	}
+
+	.footer__bottom {
+		p {
+		    font-size: 12px;
+		  }
+		a {
+	    	font-size: 12px;
+	    	img {
+	    		max-height: 20px;
+	    	}
+	    }
+	}
+}
+

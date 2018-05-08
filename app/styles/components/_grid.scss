@@ -1,0 +1,51 @@
+.grid {
+	position: relative;
+	display: block;
+	width: 100%;
+	float: left;
+	margin-bottom: 90px;
+
+	&__grid {
+		position: relative;
+		display: block;
+		width: 100%;
+		float: left;
+	}
+
+	&__item {
+		position: relative;
+		display: block;
+		float: left;
+		margin-bottom: 10px;
+		padding: 0;
+
+		.product-detail--img {
+			display: block;
+			max-width: 450px;
+			width: 98%;
+			float: left;
+			position: relative;
+
+			.product-detail__image {
+				display: block;
+				width: 100%;
+				float: left;
+				position: relative;
+
+				img {
+					display: block;
+					width: 100%;
+					float: left;
+					position: relative;
+				}
+			}
+
+			.text-img__text {
+				display: block;
+				width: 100%;
+				float: left;
+				position: absolute;
+			}
+		}
+	}
+}

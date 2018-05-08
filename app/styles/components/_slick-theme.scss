@@ -1,0 +1,147 @@
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 15px;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    outline: none;
+    opacity: 1;
+}
+.slick-prev {
+    background-image: url(/images/sipka-left.png);
+    width: 30px;
+    height: 50px;
+    opacity: .4;
+    @media screen and (max-width: $screen-lg-max) {
+        left: 5px;
+        z-index: 1;
+        margin-left: -10px;
+    }
+}
+
+.slick-prev:hover {
+    opacity: 1;
+}
+
+.slick-next {
+    background-image: url(/images/sipka-right.png);
+    width: 30px;
+    height: 50px;
+    opacity: .4;
+    @media screen and (max-width: $screen-lg-max) {
+        right: 5px;
+        z-index: 1;
+    }
+}
+
+.slick-next:hover {
+    opacity: 1;
+}
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -25px;
+    top: 457px;
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ffffff;
+    padding: 5px;
+
+    cursor: pointer;
+    background-image: url(/images/puntik.png);
+    border: 0;
+    outline: none;
+    background-color: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+    background-image: url(/images/puntik---aktivn-.png);
+}
+
+.slick-dots .slick-active {
+    background-image: url(/images/puntik---aktivn-.png);
+    background-repeat: no-repeat;
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+
+@media screen and (max-width: $screen-lg-max) {
+    .slick-dots {
+       top: auto;
+       margin-bottom: 10px;
+       position: relative;
+    }
+}
+

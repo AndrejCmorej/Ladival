@@ -1,0 +1,21 @@
+.grid__title {
+	margin-top: 160px;
+	margin-bottom: 38px;
+	h2 {
+			text-shadow: 0 3px 6px rgba(102, 37, 7, 0.19);
+			color: #0071b9;
+			font-family: $font-1;
+			font-size: 50px;
+			font-weight: 800;
+			line-height: normal;
+			display: block;
+			position: relative;
+			margin-left: 25px;
+			@media screen and (max-width: $screen-md-max) {
+				font-size: 45px;
+			}
+			@media screen and (max-width: $screen-xs-max) {
+				font-size: 30px;
+			}
+		}
+}

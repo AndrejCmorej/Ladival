@@ -1,0 +1,34 @@
+{
+  "name": "gulp-rapidstart",
+  "authors": [
+    {
+      "name": "simon cihra",
+      "email": "simoncihra.sk"
+    }
+  ],
+  "private": true,
+  "devDependencies": {
+    "modernizr": "latest",
+    "bootstrap": "latest",
+    "animejs": "^2.2.0"
+  },
+  "dependencies": {
+    "normalize-css": "latest",
+    "sass-rem": "latest",
+    "slick-carousel": "^1.8.1",
+    "masonry-layout": "^4.2.1"
+  },
+  "overrides": {
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.min.css"
+      ]
+    },
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.min.css",
+        "dist/js/bootstrap.min.js"
+      ]
+    }
+  }
+}

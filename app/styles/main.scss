@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/*		PX to Rem */
+
+@import './bower_components/sass-rem/rem';
+@import './bower_components/bootstrap/scss/bootstrap.scss';
+
+/*		ABSTRACTS
+		- for all settings, helpers, functions etc. No direct output. */
+
+@import 'abstracts/fonts';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+/*		BASE
+		- Global styles of our project.
+			And helpers - custom classes. */
+
+@import 'base/global';
+@import 'base/typography';
+
+/*		COMPONENTS
+		- All components of our webpage. */
+
+@import 'components/main-menu';
+@import 'components/slider.scss';
+@import 'components/kvalita.scss';
+@import 'components/slider-big.scss';
+@import 'components/navigation__slider.scss';
+@import 'components/dermat__slider.scss';
+@import 'components/slick-theme.scss';
+@import 'components/product-detail.scss';
+@import 'components/product.scss';
+@import 'components/faq-detail.scss';
+@import 'components/lekarny.scss';
+@import 'components/grid.scss';
+@import 'components/faq-title.scss';
+
+/*		LAYOUTS
+		- Anything that is a part of our complete layout. */
+
+@import 'layout/header';
+@import 'layout/footer';
+
+/*		PLUGINS
+		Customizations of front-end dependencies & plugins. */
+

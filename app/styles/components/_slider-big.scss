@@ -1,0 +1,273 @@
+.slider-big {
+	float: left;
+	width: 100%;
+	position: relative;
+	display: block;
+	margin-top: 320px;
+	background-image: url('../images/vrstva-14-kopie.png');
+	background-repeat: no-repeat;
+	background-position: center top;
+
+	&__img {
+		background-image: url(../images/2-layers.png);
+	    width: 135px;
+	    height: 160px;
+	    left: -113px;
+    	top: -116px;
+	    background-repeat: no-repeat;
+	    background-position: left bottom;
+	    position: absolute;
+
+	    @media screen and (max-width: $screen-sm-max) {
+	    	display: none;
+	    }
+	}
+
+	&__title {
+	    margin-bottom: 20px;
+	    margin-top: -166px;
+	    padding-left: 17px;
+
+	    h2 {
+	    	color: #fff;
+			text-shadow: 0 3px 6px rgba(102, 37, 7, 0.19);
+			font-family: $font-1;
+			font-size: 60px;
+			font-weight: 800;
+			line-height: 60px;
+	    	}
+		}
+
+	&__text{
+		padding-left: 17px;
+		margin-bottom: 145px;
+		p {
+			color: #1a65a6;
+			font-family: $font-1;
+			font-size: 33px;
+			font-weight: 800;
+			line-height: 60px;
+		}
+	}
+
+	&__slider {
+		float: left;
+		width: 100%;
+		display: block;
+		position: relative;
+		background-image: url('../images/tvar-4.png');
+		background-repeat: no-repeat;
+	    background-position: center top;
+	    margin-top: 0px;
+	}
+
+
+	&__item {
+		width: 100%;
+		height: auto;
+	}
+
+    &__product {
+		width: 100%;
+		height: 100%;
+		background-repeat: no-repeat;
+	    background-position: center top;
+	    top: 40px;
+	}
+
+	&__image {
+		float: left;
+		width: 100%;
+		display: block;
+		text-align: center;
+		padding-bottom: 150px;
+		img{
+			width: auto;
+			max-width: 100%;
+			display: inline-block;
+
+			@media screen and (max-width: $screen-lg-max) {
+				width: 100%;
+				max-width: 650px;
+				height: auto;
+			}
+
+			@media screen and (max-width: $screen-sm-max) {
+				max-width: 450px;
+			}
+		}
+	}
+	&__button {
+	    position: relative;
+	    text-align: center;
+	   	z-index: 1000;
+	   	top: -266px;
+    	a {
+			border: 0;
+			border-radius: 30px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-top: 17px;
+			padding-bottom: 17px;
+			color: #fff;
+			background-color: #005DB4;
+			text-decoration: none;
+
+			.fa-angle-right {
+				opacity: 0.5;
+			}
+
+			&:focus, &:hover, &:active {
+				background-color: #004381;
+				border-color: #00305d;
+				color: #fff;
+			}
+
+			span {
+				display: inline-block;
+				padding-left: 23px;
+    			padding-right: 27px;
+
+				font-family: $font-1;
+				font-size: 18px;
+				font-weight: 700;
+				line-height: 25.74px;
+				letter-spacing: -0.45px;
+			}
+		}
+	}
+
+
+}
+
+.slider-big-nav {
+	margin-bottom: 77px;
+}
+@media screen and (max-width: 1440px) {
+	.slider-big {
+		&__img {
+	        top: -163px;
+		    left: 15px;
+		}
+	}
+}
+
+@media screen and (max-width: 1270px) {
+	.slider-big__title {
+		h2 {
+			font-size: 59px;
+		}
+	}
+	.slider-big__text {
+		p{
+			font-size: 32px;
+		}
+	}
+
+}
+
+@media screen and (max-width: 1200px) {
+	.slider-big__title {
+		h2 {
+			font-size: 48px;
+		}
+	}
+
+	.slider-big__text {
+		p {
+			font-weight: 700;
+		    font-size: 28px;
+		    line-height: 1.3em;
+		}
+	}
+
+	.slider-big-nav {
+		.slider-big__img{
+			left: -7px;
+    		top: -178px;
+		}
+	}
+}
+
+@media screen and (max-width: 993px) {
+	.slider-big {
+		margin-top: 260px;
+		&__slider {
+			height: 450px;
+		}
+	}
+	.slider-big__title {
+		h2 {
+			font-size: 50px;
+		}
+	}
+
+	.slider-big__text {
+		margin-bottom: 80px;
+		p {
+			font-weight: 700;
+		    font-size: 28px;
+		    line-height: 1.3em;
+		}
+	}
+
+	.slider-big-nav {
+		margin-bottom: 0;
+		.slider-big__img{
+			left: -7px;
+    		top: -190px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.slider-big {
+		margin-top: 250px;
+		&__slider {
+			height: 350px;
+		}
+	}
+	.slider-big__title {
+		h2 {
+			line-height: 50px;
+			font-size: 45px;
+		}
+	}
+
+	.slider-big__text {
+		p {
+			font-weight: 700;
+		    font-size: 23px;
+		    line-height: 1.3em;
+		}
+	}
+
+	.slider-big-nav {
+		margin-bottom: 0;
+		.slider-big__img{
+			left: -7px;
+    		top: -178px;
+		}
+	}
+}
+
+@media screen and (max-width: $screen-xs-max) {
+	.slider-big__title {
+		h2 {
+			line-height: normal;
+			font-size: 30px;
+		}
+	}
+
+	.slider-big__text {
+		p {
+			font-weight: 700;
+		    font-size: 17px;
+		    line-height: 1.3em;
+		}
+	}
+}
+
+
+
+

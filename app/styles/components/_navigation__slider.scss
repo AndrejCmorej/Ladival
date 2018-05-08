@@ -1,0 +1,121 @@
+.navigation__slider {
+	top: -196px;
+    position: relative;
+	nav {
+		ul {
+			padding: 0px;
+			display: flex;
+			justify-content: center;
+			li {
+				margin-right: 5px;
+				a {
+					border: 0;
+					border-radius: 30px;
+					padding-left: 28px;
+					padding-right: 28px;
+					padding-top: 11px;
+					padding-bottom: 11px;
+					text-decoration: none;
+					color: #1a65a6;
+					font-family: $font-1;
+					font-size: 16px;
+					font-weight: 600;
+					line-height: 60px;
+				}
+
+				.one:focus, .one:active, .one:hover {
+						height: 44px;
+						background-color: #e66d7f;
+						color: #fff;
+					}
+
+				.two:focus, .two:active, .two:hover {
+						height: 44px;
+						background-color: #3d6cb3;
+						color: #fff;
+					}
+				.three:focus, .three:active, .three:hover {
+						height: 44px;
+						background-color: #e66d7f;
+						color: #fff;
+					}
+				.four:focus, .four:active, .four:hover {
+						height: 44px;
+						background-color: #63afb4;
+						color: #fff;
+					}
+				.five:focus, .five:active, .five:hover {
+						height: 44px;
+						background-color: #e37022;
+						color: #fff;
+					}
+				.six:focus, .six:active, .six:hover {
+						height: 44px;
+						background-color: #60666b;
+						color: #fff;
+					}
+				.seven:focus, .seven:active, .seven:hover {
+						height: 44px;
+						background-color: #70b74d;
+						color: #fff;
+					}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1270px) {
+	.navigation__slider {
+		nav {
+			ul {
+				li {
+					a {
+						padding-left: 25px;
+   						padding-right: 25px;
+   						padding-top: 10px;
+    					padding-bottom: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.navigation__slider {
+		nav {
+			ul {
+				li {
+					a {
+						padding-left: 10px;
+   						padding-right: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $screen-lg-max) {
+	.navigation__slider {
+		top: 0px;
+		margin-top: 20px;
+		nav {
+			ul {
+				display: block;
+				text-align: center;
+				li {
+					background-color: #005DB4;
+						border-color: #00305d;
+						border-radius: 30px;
+						margin: 10px 0;
+					a {
+						color: #fff;
+						line-height: 3em;
+					}
+				}
+			}
+		}
+	}
+}
+

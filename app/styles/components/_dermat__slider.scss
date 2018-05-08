@@ -1,0 +1,194 @@
+.dermat__slider {
+	text-align: center;
+	h3 {
+		font-family: $font-3;
+		font-size: 50px;
+		color: #fff;
+		font-weight: 400;
+		text-shadow: 0 3px 6px rgba(102, 37, 7, 0.19);
+		line-height: 61.47px;
+	}
+
+	h2 {
+		  	color: #fff;
+		    margin-bottom: 24px;
+		    margin-top: 20px;
+			text-shadow: 0 3px 6px rgba(102, 37, 7, 0.19);
+			font-family: $font-1;
+			font-size: 70px;
+			font-weight: 800;
+			line-height: 60px;
+	   }
+
+	p {
+			color: #1a65a6;
+			font-family: $font-1;
+			font-size: 33px;
+			font-weight: 800;
+			line-height: 60px;
+		}
+}
+
+.after__slider {
+	width: 100%;
+	ul {
+		margin-top: 100px;
+		padding-left: 77px;
+		display: flex;
+    	justify-content: center;
+		li {
+			padding-right: 54px;
+			color: #1a65a6;
+			font-family: $font-1;
+			font-size: 30px;
+			font-weight: 700;
+			line-height: 60px;
+
+			img {
+				margin-right: 10px;
+			}
+		}
+	}
+
+	p {
+		text-align: right;
+		margin-right: 62px;
+   		margin-top: 71px;
+		margin-bottom: 157px;
+		color: #1a65a6;
+		font-family: $font-1;
+		font-size: 15px;
+		font-weight: 600;
+		line-height: 60px;
+	}
+}
+@media screen and (max-width: 1270px) {
+	.after__slider {
+		ul {
+			padding-left: 10px;
+			li {
+				padding-right: 40px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1200px) {
+	.dermat__slider {
+		h3 {
+			font-size: 44px;
+		}
+		h2 {
+			font-size: 53px;
+		}
+		p {
+			font-weight: 700;
+		    font-size: 28px;
+		    line-height: 1.3em;
+		}
+	}
+
+	.kvalita__button {
+		    margin-top: 70px;
+	}
+
+	.after__slider {
+		ul {
+			li {
+				padding-right: 2%;
+				font-size: 22px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.dermat__slider {
+		h3 {
+			font-size: 44px;
+		}
+		h2 {
+			font-size: 53px;
+		}
+		p {
+			font-weight: 700;
+		    font-size: 28px;
+		    line-height: 1.3em;
+		}
+	}
+
+	.kvalita__button {
+		    margin-top: 70px;
+	}
+
+	.after__slider {
+		text-align: center;
+		ul {
+			display: block;
+			margin-top: 75px;
+			text-align: left;
+			li {
+				line-height: 3em;
+				padding-right: 2%;
+				font-size: 22px;
+			}
+		}
+
+		p {
+			margin: 50px 0;
+		}
+	}
+}
+
+@media screen and (max-width: $screen-lg-max) {
+	.dermat__slider {
+		margin-top: 150px;
+	}
+}
+
+@media screen and (max-width: $screen-sm-max) {
+	.dermat__slider {
+		margin-top: 70px;
+		h3 {
+			font-size: 30px;
+			margin-bottom: 0px;
+		}
+		h2 {
+			font-size: 30px;
+			margin-top: 0px;
+			margin-bottom: 20px;
+		}
+		p {
+			font-weight: 700;
+		    font-size: 17px;
+		    line-height: normal;
+		}
+	}
+
+	.kvalita__button {
+		    margin-top: 70px;
+	}
+
+	.after__slider {
+		text-align: center;
+		ul {
+			display: block;
+			margin-top: 75px;
+			text-align: left;
+			li {
+				line-height: 2.3em;
+				padding-right: 2%;
+				font-size: 15px;
+				img {
+					max-width: 40px;
+					max-height: 28px;
+					height: 100%;
+				}
+			}
+		}
+
+		p {
+			margin: 50px 0;
+			font-size: 11px;
+		}
+	}
+}
